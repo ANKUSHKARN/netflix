@@ -1,0 +1,357 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    height: 95vh;
+    background-position: center center;
+    position: relative;
+    background-image: url("assets/images/bg.jpg");
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 60vw;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 18px;
+    padding: 0 29px;
+}
+
+.hero> :first-child{
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.separation{
+    position: relative;
+    z-index: 20;
+    height: 8px;
+    background-color: rgb(38, 38, 38);
+}
+.nav-btn2{
+    background-color: red;
+    font-size: 14px;
+    padding: 5px 18px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 8px;
+}
+.nav-btn1{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    padding: 5px 18px;
+    color: white;
+    border: 0.5px solid gray;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    margin: 0 8px;
+}
+.start{
+    background-color: red;
+    font-size: 24px;
+    padding: 14px 25px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+input{
+    margin-right: 3px;
+    background-color: rgba(25, 0, 0, 0);
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 16px 90px 16px 10px;
+    border: 0.5px solid gray;
+    color: white;
+}
+
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.first{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+}
+
+
+.firstsec{
+    
+    position: relative;
+}
+.firstsec img{
+    /* margin-top: 10px; */
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.firstsec video{
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    right: 80px;
+    /* bottom: 0; */
+}
+
+.first> div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.first> div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    padding: 24px 0;
+    
+}
+.first> div :nth-child(2){
+    font-size: 24px;
+    margin-top: 10px;
+    
+}
+
+.faq h1{
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.faq p{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin: 45px auto 20px auto;
+}
+
+.faqbox{
+    
+    color: white;
+    justify-content: space-between;
+    padding: 24px;
+    font-size: 24px;
+    display: flex;
+    max-width: 70vw;
+    margin: 12px auto;
+    background-color: rgba(128, 128, 128, 0.256);
+    cursor: pointer;
+}
+
+.faqbox:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(128, 128, 128, 0.559);
+}
+
+.separation1{
+    height: 8px;
+    background-color: rgb(38, 38, 38);
+    margin-top: 60px;
+}
+
+.foot{
+    font-family: "Poppins", sans-serif;
+    width: 70vw;
+    margin: 50px auto;
+    display: grid;
+    color:  rgba(220, 220, 220, 0.909);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.foot li{
+    list-style: none;
+    font-size: 16px;
+}
+.que{
+    grid-column: 1/5;
+}
+.Netflix{
+    margin-top: 18px;
+    grid-row: 7;
+}
+.foot-btn{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    padding: 5px 5px;
+    color: white;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    .main{
+        background-size: max(2200px,100vw);
+    }
+
+    .hero> :first-child{
+        font-weight: 700;
+        font-size: 30px;
+        transition: all 1s ;
+    }
+
+    .hero> :nth-child(2){
+        font-size: 15px;
+        font-weight: 500;
+        transition: all 1s ;
+
+    }
+
+    .hero> :nth-child(3){
+        font-size: 12px;
+        font-weight: 300;
+        transition: all 1s ;
+
+    }
+
+    .start{
+        font-size: 16px;
+        padding: 12px 20px;
+        font-weight: 600;
+        margin: 15px 5px;
+        transition: all 1s;
+    }
+    input{
+        margin-right: 0px;
+        font-size: 17px;
+        padding: 8px 45px 8px 5px;
+        border: 0.5px solid gray;
+        color: white;
+    }
+    
+    .hero-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav{
+        max-width: 90vw;
+        height: 60px;
+    }
+    .hero{
+        height: calc(100% - 60px);
+    }
+    .nav-btn{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .firstsec img{
+        width: 300px;
+    }
+    .firstsec video{
+        top: 40px;
+        width: 250px;
+        right: 40px;
+    }
+       
+    .first> div :first-child{
+        font-size: 30px;
+    }
+
+    .first> div :nth-child(2){
+        font-size: 16px;
+        
+    }
+    
+    .faq h1{
+        font-size: 20px;
+    }
+    
+    .faq p{
+        font-size: 11px;
+    }
+    
+    .faqbox{
+        font-size: 14px;
+    }
+    
+    .foot{
+        font-family: "Poppins", sans-serif;
+        width: 70vw;
+        margin: 50px auto;
+        display: grid;
+        color:  rgba(220, 220, 220, 0.909);
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    }
+    
+    .foot li{
+        list-style: none;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1560px){
+    .main{
+        background-size: max(2300px,100vw);
+    }
+}
+
+
