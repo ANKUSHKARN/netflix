@@ -242,11 +242,11 @@ input{
     }
     .main{
         background-size: max(2200px,100vw);
-        height:70vh;
+        height:65vh;
     }
 
     .main .box{
-        height:70vh;
+        height:65vh;
     }
 
     .hero> :first-child{
